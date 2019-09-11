@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Java</title>
+<style>
+body{color:black;
+     text-decoration:none;
+    font-size:30px;
+    text-align:center;
+    background:url("d.jpg");
+    background-size:100% 1500px;
+    background-border:solid;
+    }
+table{color:khaki;
+      font-size:30px;
+      text-decoration:none;
+      text-indent:00px;
+      line-height:40px;
+     }
+#tr input[type="radio"]{margin-top:20px;
+                       width:25px;}
+h1{color:white;
+   font-size:40px;
+   text-align:center;
+   text-decoration:none;}
+  
+      
+</style>
+</head>
+<script>
+function timeout()
+       {var minute=Math.floor(timeLeft/60);
+        var second=timeLeft%60;
+        var mint =checktime(minute);
+        var sec =checktime(second);
+        if(timeLeft<=0)
+           {
+            clearTimeout(tm);
+            document.getElementById("form1").submit(); 
+            }
+        else{
+           document.getElementById("time").innerHTML=mint+":"+sec;
+           }
+         timeLeft--;
+         var tm=setTimeout(function(){timeout()},1000);
+        }
+     function checktime(msg){
+         if(msg<10)
+            {
+             msg="0"+msg;
+            }
+          return msg;
+}
+</script>
+<body onload="timeout()">
+<h1>Java-Test
+<script type="text/javascript">
+var timeLeft=10*60;
+</script>
+<div id="time" style="float:right">timeout</div></h1>
+<form action="http://localhost/online/phpfile/Result.php" method="post" id="form1">
+
+<table>
+<pre>
+<tr>
+<td>Q.1-  Which of the following method is used to get characterat spicified index?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q1" value="1">chatAt();&nbsp;&nbsp;&nbsp;<input type="radio" name="q1" value="0">charAtIndex<br><input type="radio" name="q1" value="0">char()&nbsp;&nbsp;&nbsp;<input type="radio" name="q1" value="0">none of above</td>
+</tr>
+<tr>
+<td>Q.2-  String is a?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q2" value="0">object;&nbsp;&nbsp;&nbsp;<input type="radio" name="q2" value="0">variable<br><input type="radio" name="q2" value="1">class&nbsp;&nbsp;&nbsp;<input type="radio" name="q2" value="0">none of above</tr>
+<tr>
+<td>Q.3-  What is true recording following code in Student.java,public class student{},public class ABC{} ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q3" value="1">compile time Error&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="0">Runtime Error<br><input type="radio" name="q3" value="0">No Error&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="0">none of above</td>
+</tr> 
+<tr>
+<td>Q.4-  What is correct of syntex of creating object of class XYZ ? </td>
+</tr>
+<tr>
+<td><input type="radio" name="q4" value"0">XYZ object=new XYZ;&nbsp;&nbsp;&nbsp;<input type="radio" name="q4" value="1">XYZ object=new XYZ();<br><input type="radio" name="q4" value="0">XYZ object=new XYZ[];&nbsp;&nbsp;&nbsp;<input type="radio" name="q4" value="0">none of above</td>
+</tr>
+<tr>
+<td>Q.5-  Instance variable can have ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q5" value="0">only public access modifier&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0">only public or private access modifier<br><input type="radio" name="q5" value="0">only pubic or private or prodected access modifier&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="1">public private protected default access modifier</td>
+</tr>
+<tr>
+<td>Q.6-  Which of the following method name dose not follow Javabeans standered ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q6" value="0">getData&nbsp;&nbsp;&nbsp;<input type="radio" name="q6" value="0">setData<br><input type="radio" name="q6" value="1">putData&nbsp;&nbsp;&nbsp;<input type="radio" name="q6" value="0">isVailed</td>
+</tr>
+<tr>
+<td>Q.7-  Which of the following is True about static ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q7" value="0">there is only one copyof static variable&nbsp;&nbsp;&nbsp;<input type="radio" name="q7" value="0">static method can not access non static mambers<br><input type="radio" name="q7" value="0">static variable is access using class name&nbsp;&nbsp;&nbsp;<input type="radio" name="q7" value="1">All of above</td>
+</tr>
+<tr>
+<td>Q.8-  Which of the following method will not compile ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q8" value="0">public void show(){int a=10;}&nbsp;&nbsp;&nbsp;<input type="radio" name="q8" value="0">public void show(){final int b=10};<br><input type="radio" name="q8" value="1">public void show(){private int c=10}&nbsp;&nbsp;&nbsp;<input type="radio" name="q8" value="0">All of above will compile</td>
+</tr>
+<tr>
+<td>Q.9-  Which of the following class will accessable in same packege but not out side ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q9" value="1">class X{}&nbsp;&nbsp;&nbsp;<input type="radio" name="q9" value="0">public class Y{}<br><input type="radio" name="q9" value="0">private class Z{}&nbsp;&nbsp;&nbsp;<input type="radio" name="q9" value="0">All of above</td>
+</tr>
+<tr>
+<td>Q.10-  Which of the following class will not compile ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q10" value="0">class A{}&nbsp;&nbsp;&nbsp;<input type="radio" name="q10" value="0">public class A{}<br><input type="radio" name="q10" value="1">protected class A{}&nbsp;&nbsp;&nbsp;<input type="radio" name="q10" value="0">All of above will compile</td>
+</tr>
+</pre>
+<td align="center"/><br><br>
+<input type="SUBMIT" name="j" value="SUBMIT"/>
+</table>
+</form>
+</body>
+</html>                                                                                                                           

@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>CSS</title>
+<style>
+body{color:black;
+     text-decoration:none;
+    font-size:30px;
+    text-align:center;
+    background:url("x.jpg");
+    background-size:100% 1500px;
+    background-border:solid;
+    }
+table{color:black;
+      font-size:30px;
+      text-decoration:none;
+      text-indent:00px;
+      line-height:40px;
+     }
+h1{color:white;
+   text-size:30px;
+   text-align:center;
+   text-decoration:underline;}
+  
+      
+</style>
+</head>
+<body>
+<script>
+function timeout()
+       {var minute=Math.floor(timeLeft/60);
+        var second=timeLeft%60;
+        var mint =checktime(minute);
+        var sec =checktime(second);
+        if(timeLeft<=0)
+           {
+            clearTimeout(tm);
+            document.getElementById("form1").submit(); 
+            }
+        else{
+           document.getElementById("time").innerHTML=mint+":"+sec;
+           }
+         timeLeft--;
+         var tm=setTimeout(function(){timeout()},1000);
+        }
+     function checktime(msg){
+         if(msg<10)
+            {
+             msg="0"+msg;
+            }
+          return msg;
+}
+</script>
+<body onload="timeout()">
+<h1>CSS-Test 
+<script type="text/javascript">
+var timeLeft=5*60;
+</script>
+<div id="time" style="float:right">timeout</div></h1> 
+
+
+
+
+
+<form action="http://localhost/online/phpfile/Result.php" method="post" id="form1">
+
+
+<table>
+<pre>
+<tr>
+<td>Q.1-   What does HTML stand for?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q1" value="0"> Home Tool Markup Language&nbsp;&nbsp;&nbsp;<input type="radio" name="q1" value="0">Hyperlinks and Text Markup Language<br><input type="radio" name="q1" value="1">Hyper Text Markup Language&nbsp;&nbsp;&nbsp;<input type="radio" name="q1" value="0">none of above</td>
+</tr>
+<tr>
+<td>Q.2-  Who is making the Web standards?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q2" value="0"> microsoft&nbsp;&nbsp;&nbsp;<input type="radio" name="q2" value="1"> The World Wide Web Consortium<br><input type="radio" name="q2" value="0">Mozilla&nbsp;&nbsp;&nbsp;<input type="radio" name="q2" value="0">Google</td>
+</tr>
+<tr>
+<td>Q.3-  Choose the correct HTML element for the largest heading: ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q3" value="0"> head&nbsp;&nbsp;&nbsp;<input type="radio" name="q3" value="0"> h6<br><input type="radio" name="q3" value="1"> h1&nbsp;&nbsp;&nbsp<input type="radio" name="q3" value="0">  heading</td>
+</tr>
+<tr>
+<td>Q.4- What is the correct HTML element for inserting a line break? </td>
+</tr>
+<tr>
+<td><input type="radio" name="q4" value="0">1b&nbsp;&nbsp;&nbsp;<input type="radio" name="q4" value="0">break<br><input type="radio" name="q4" value="1">br&nbsp;&nbsp;&nbsp;<input type="radio" name="q4" value="0">none of above</td>
+</tr>
+<tr>
+<td>Q.5- What is the correct HTML for adding a background color?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q5" value="1">(body style="background-color:yellow;")&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0">(body bg="yellow")<br><input type="radio" name="q5" value="0">(background)yellow(/background)&nbsp;&nbsp;&nbsp;<input type="radio" name="q5" value="0">none of above</td>
+</tr>
+<tr>
+<td>Q.6-   Choose the correct HTML element to define important text ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q1" value="0">(important)&nbsp;&nbsp;&nbsp;<input type="radio" name="q6" value="1">(strong)<br><input type="radio" name="q6" value="0">(i)&nbsp;&nbsp;&nbsp;<input type="radio" name="q6" value="0">(b)</td>
+</tr>
+<tr>
+<td>Q.7-  Choose the correct HTML element to define emphasized text ?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q7" value="0">(i)&nbsp;&nbsp;&nbsp;<input type="radio" name="q7" value="1">(em)<br><input type="radio" name="q7" value="0">(italic)&nbsp;&nbsp;&nbsp;<input type="radio" name="q7" value="0">none of above</td>
+</tr>
+<tr>
+<td>Q.8- What is the correct HTML for creating a hyperlink?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q8" value="1">(<a href="http://www.w3schools.com">W3Schools</a>)&nbsp;&nbsp;&nbsp;<input type="radio" name="q8" value="0">(<a>http://www.w3schools.com</a>)<br><input type="radio" name="q8" value="0">(<a name="http://www.w3schools.com">W3Schools.com</a>)&nbsp;&nbsp;&nbsp;<input type="radio" name="q8" value="0">(<a url="http://www.w3schools.com">W3Schools.com</a>)</td>
+</tr>
+<tr>
+<td>Q.9-   Which character is used to indicate an end tag?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q9" value="1">(/)&nbsp;&nbsp;&nbsp;<input type="radio" name="q9" value="0">(*)<br><input type="radio" name="q9" value="0">(<)&nbsp;&nbsp;&nbsp;<input type="radio" name="q9" value="0">(^)</td>
+</tr>
+<tr>
+<td>Q.10-  How can you open a link in a new tab/browser window?</td>
+</tr>
+<tr>
+<td><input type="radio" name="q10" value="0">(a href="url" target="new")&nbsp;&nbsp;&nbsp;<input type="radio" name="q10" value="0">(a href="url" new)<br><input type="radio" name="q10" value="0">(a href="url" target="_blank")&nbsp;&nbsp;&nbsp;<input type="radio" name="q10" value="0">All of above</td>
+</tr>
+</pre>
+<td align="center"/><br><br>
+<input type="SUBMIT" name="j" value="SUBMIT"/>
+</table>
+</form>
+</body>
+</html>                                                                                                                             

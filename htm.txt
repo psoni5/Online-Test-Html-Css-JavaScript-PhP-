@@ -1,0 +1,55 @@
+1. What does HTML stand for?
+
+ Home Tool Markup Language
+ Hyperlinks and Text Markup Language
+ Hyper Text Markup Language
+2. Who is making the Web standards?
+
+ Microsoft
+ The World Wide Web Consortium
+Mozilla
+Google
+3. Choose the correct HTML element for the largest heading:
+
+ <head>
+ <h6>
+ <h1>
+ <heading>
+4. What is the correct HTML element for inserting a line break?
+
+ <lb>
+ <br>
+ <break>
+5. What is the correct HTML for adding a background color?
+
+ <body style="background-color:yellow;">
+ <body bg="yellow">
+ <background>yellow</background>
+6. Choose the correct HTML element to define important text
+
+ <important>
+ <strong>
+ <b>
+ <i>
+7. Choose the correct HTML element to define emphasized text
+
+ <i>
+ <em>
+ <italic>
+8. What is the correct HTML for creating a hyperlink?
+
+ <a href="http://www.w3schools.com">W3Schools</a>
+ <a>http://www.w3schools.com</a>
+ <a name="http://www.w3schools.com">W3Schools.com</a>
+ <a url="http://www.w3schools.com">W3Schools.com</a>
+9. Which character is used to indicate an end tag?
+
+ /
+ *
+ <
+ ^
+10. How can you open a link in a new tab/browser window?
+
+ <a href="url" target="new">
+ <a href="url" new>
+ <a href="url" target="_blank">
